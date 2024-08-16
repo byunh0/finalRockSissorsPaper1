@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: 'YoonChildfundkoreaManSeh';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaManSeh.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+* {
+  font-family:YoonChildfundkoreaManSeh;
+  font-weight: 800; 
+  font-size: 30px; 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-image:url(https://i.pinimg.com/originals/2d/d1/96/2dd196c2d8a76d59dc02cc40a22750c7.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+
 }
 
-.App-link {
-  color: #61dafb;
+.box-style{
+  width:400px;
+  height:500px;
+  display: flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items:center;
+  margin-right:20px;
+  border-radius: 22px;
+  text-align: center;
+  background-color:rgba(255, 255, 255, 0.304);
+  box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.304);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.box-container{
+  display:flex;
+  margin-bottom:10px;
+}
+
+.img-style{
+  width:350px;
+  height:400px;
+}
+
+.win{
+
+  border:20px solid orange;
+}
+
+.lose{
+ 
+  border:20px solid BROWN;
+}
+
+.tie{
+  
+  border:20px solid olive;
+}
+
+.buttonStyle{
+  padding: 7px;
+  margin-right: 7px;
+  border-radius:10px;
+  width:100px;
+  background-color:rgba(253, 200, 101, 0.879);
+  border:none;
+ 
+}
+
+@media  (max-width:768px){
+.container{
+  min-width:300px;
+  width:90%
+}
+.box-style{
+  height:600px;
+  width:90%
+}
+
+.box-container{
+  min-width:300px;
+  width:90%
+}
+  
+
+
+.img-style{
+  width:60%
+}
+
+.buttonStyle{
+  width:50px;
+  font-size:15px;
+}
+
+.titlenone{
+  font-size:20px;
+}
+
+.resultnone{
+  font-size:20px;
+}
+
 }
